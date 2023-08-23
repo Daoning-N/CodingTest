@@ -1,11 +1,14 @@
-import java.util.*;
 class Solution {
     public long solution(long n) {
-        long answer = (long)Math.sqrt(n);
-
-        if(answer * answer == n)
-            return (long)Math.pow(answer+1,2);
-        else
-            return -1;
+        long answer = 0;
+        for(long i=0; i<=n; i++){
+            if(i*i==n){
+                answer = (i+1)*(i+1);
+                break;
+            }else{
+                answer = -1;
+            }
+        }
+        return answer;
     }
 }
