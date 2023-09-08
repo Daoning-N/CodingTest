@@ -7,7 +7,7 @@ class Solution {
         int maxW = dots[0][1];
         int minW = dots[0][1];
         
-        for(int i=1; i<dots.length; i++){
+        for(int i=0; i<dots.length; i++){
             maxH = Math.max(maxH, dots[i][0]);
             minH = Math.min(minH, dots[i][0]);
             maxW = Math.max(maxW, dots[i][1]);
